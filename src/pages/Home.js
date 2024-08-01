@@ -46,7 +46,7 @@ export default function Home() {
 
     <a href="https://github.com/Punsara-Y/calculator-for-android.git" class="btn btn-success col-2 p-3  mybtn" >Android Calculator</a>
 
-    <a href="https://github.com/Punsara-Y/Portfolio-web.git" class="btn btn-success col-2 p-3 mybtn" >Portfolio Website</a>
+    <a href="https://github.com/Punsara-Y/Portfolio.git" class="btn btn-success col-2 p-3 mybtn" >Portfolio Website</a>
     </div>
 
 
