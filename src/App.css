@@ -1,225 +1,96 @@
-.App {
-  text-align: center;
-  
-}
-
-*{
-  box-sizing: border-box;
-  border: 0;
-  padding: 0;
-  margin: 0 auto; 
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-h1{
-  font-size: 50px;
-  font-family: cursive;
-  color: white;
-}
-h2
-{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  color: white;
-  margin: 20px;
-}
-
-h3{
-  font-family: monospace;
-  color: white;
-}
-p{
-  font-size: 25px;
-  text-align: center;
-  color: white;
-  margin: 20px;
-}
-h5{
-  color: white;
-}
-
-
-
-@media (max-width:480px)
-{
-  h1{
-    font-size: 30px;
-  }
-  h2{
-    font-size: 15px;
-    text-align: center;
-    margin-top: -10px;
-  }
-  h5{
-    font-size: 10px;
-    color: white;
-  }
-
-  p{
-    font-size: 15px;
-    margin: 10px;
-  }
-  .email
-  {
-    font-size: 11.5px;
-    
-  }
-  .btn
-  {
-    width: 70px;
-    height: 30px;
-    font-size: 11px;
-  }
-  .mybtn
-  {
-    width: 70px;
-    height: 70px;
-    font-size: 9.5px;
-    text-align: center;
-    align-content: center;
-  }
-  .cvbtn
-  {
-    width: 80px;
-  }
-  
-  
-}
-
-@media (max-width:360px)
-{
-  h1{
-    font-size: 30px;
-    color: white;
-  }
-  h2{
-    font-size: 15px;
-    text-align: justify;
-    color: white;
-  }
-  h5{
-    font-size: 10px;
-    color: white;
-  }
-
-  p{
-    font-size: 11.5px;
-    color: white;
-    margin: 10px;
-  }
-  .email
-  {
-    font-size: 11.5px;
-    color: white;
-  }
-  .btn
-  {
-    width: 60px;
-    height: 20px;
-    font-size: 8px;
-  }
-  .mybtn
-  {
-    width: 68px;
-    height: 65px;
-    font-size: 9px;
-  }
-  .cvbtn
-  {
-    width: 80px;
-    height: 30px;
-  }
-  
-}
-
-.navstyle
-{
-  background-color: purple;
-  height: 80px;
-  width: 100%;
-}
-.mypic
-{
-  background-image: url(./Pictures/Punsara.png);
-  background-size:cover;
-  height: 300px;
-  width: 290px;
-  padding: 20px;
-  margin-top: 50px;
-  border-radius: 800px;
-}
-.about{
-  margin-top: 20px;
-  width:fit-content;
-}
-
-.homebg
-{
-  background-image: url(./Pictures/mainbg.jpg);
-  padding-top: 5px;
-  background-size: cover;
-}
-.footercolor
-{
-  background-color: #191a1b;
-}
-.tp
-{
-  text-align: center;
-}
-.email
-{
-  text-align: center;
-}
-.homemargin
-{
-  margin: 20px;
-
-}
-body
-{
+body {
   background-color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
 }
-.card
-{
-  background: linear-gradient(to right,#614385 ,#516395,#662D8C);
+
+.glow-text {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 15px #0ff, 0 0 25px #0ff;
+  font-size: 28px;
 }
-.cv
-{
-  text-align: center;
+
+.mybtn {
+  transition: all 0.4s ease-in-out;
+  border-radius: 15px;
+  font-weight: bold;
+  margin: 20px;
+  height: 60px;
+  width: 200px;
+}
+.mybtn:hover {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  transform: scale(1.05);
+  color: white;
+}
+
+.about {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cvbtn {
+  background-color: #00bcd4;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  margin-left: 650px;
+}
+.cvbtn:hover {
+  background-color: #0097a7;
+}
+
+.card {
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 25px;
+  font-size: 22px;
+  align-items: center;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+.navstyle {
+  border-radius: 20px;
+  margin-left: 520px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.mypic {
+  background-image: url(./Pictures/Me.png);
+  background-size: cover;
+  margin-left: 540px;
+  margin-bottom: 50px;
+  height: 350px;
+  width: 340px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  animation: floatPic 3s ease-in-out infinite;
+}
+
+@keyframes floatPic {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.homebg {
+  background-image: url(./Pictures/mainbg.jpg);
+  background-size: cover;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+@media (max-width: 480px) {
+  .mypic {
+    width: 200px;
+    height: 200px;
+  }
+  .glow-text {
+    font-size: 20px;
+  }
+  .mybtn,
+  .cvbtn {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
