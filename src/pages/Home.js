@@ -11,6 +11,7 @@ export default function Home() {
           My name is Dinuksha Punsara Yapa. Age is 22.I'm Currently Compuer
           Science graduate of University of Bedfordshire.{" "}
         </p>
+        
         <p>
           I would like to say about my skills i have gained until now.Mainly I
           have moderate Knowledge about Programming languages like JAVA ,
